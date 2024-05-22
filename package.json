@@ -1,0 +1,46 @@
+{
+  "name": "bundled-express-api",
+  "version": "1.0.0",
+  "description": "api crushed to a single file",
+  "scripts": {
+    "start": "node index.js",
+    "build": "webpack --config build/webpack.prod.conf.js"
+  },
+  "author": "cv2",
+  "dependencies": {
+    "async-hooks": "^1.3.1",
+    "babel-loader": "9.1.3",
+    "browserify-zlib": "^0.2.0",
+    "crypto-browserify": "^3.12.0",
+    "ejs": "^3.1.10",
+    "express": "4.19.2",
+    "http-browserify": "^1.7.0",
+    "net": "^1.0.2",
+    "querystring-es3": "^0.2.1",
+    "stream-browserify": "3.0.0",
+    "stream-http": "^3.2.0",
+    "vm-browserify": "^1.1.2",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "7.24.5",
+    "buffer": "6.0.3",
+    "path": "0.12.7",
+    "url": "0.11.3",
+    "webpack": "5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "browser": {
+    "fs": false,
+    "stream-browserify": false,
+    "path": false,
+    "os": false,
+    "crypto": false,
+    "stream": false,
+    "http": false,
+    "tls": false,
+    "zlib": false,
+    "https": false,
+    "net": false
+  }
+}
